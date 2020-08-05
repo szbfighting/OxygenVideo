@@ -1,13 +1,10 @@
-package com.example.tablayout.adapter
+package com.oxygenvideo.ui.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.tablayout.fragment.ChildFragment
-import com.example.tablayout.fragment.MessageFragment
-import kotlinx.coroutines.async
-import kotlinx.coroutines.awaitAll
-import kotlinx.coroutines.runBlocking
+import com.oxygenvideo.ui.fragment.ChildFragment
+import com.oxygenvideo.ui.fragment.MessageFragment
 
 class MainViewPagerAdapter(manager: FragmentManager) : FragmentPagerAdapter(manager, BEHAVIOR_SET_USER_VISIBLE_HINT)
 {

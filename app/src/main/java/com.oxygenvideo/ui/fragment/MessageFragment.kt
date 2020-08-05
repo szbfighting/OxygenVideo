@@ -1,4 +1,4 @@
-package com.example.tablayout.fragment
+package com.oxygenvideo.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.commit
-import androidx.fragment.app.transaction
-import androidx.viewpager.widget.ViewPager
 import com.example.tablayout.R
-import com.example.tablayout.adapter.MFragmentViewPagerAdapter
+import com.oxygenvideo.ui.adapter.MFragmentViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.fragment_message.*
 
@@ -31,7 +28,10 @@ class MessageFragment:Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         //在activityCreated时初始化vp的adapter
-        val secondAdapter = MFragmentViewPagerAdapter(childFragmentManager)
+        val secondAdapter =
+            MFragmentViewPagerAdapter(
+                childFragmentManager
+            )
         viewPager.apply {
             adapter = secondAdapter
             offscreenPageLimit = 1

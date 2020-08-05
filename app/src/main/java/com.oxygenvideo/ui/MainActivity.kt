@@ -1,26 +1,19 @@
-package com.example.tablayout
+package com.oxygenvideo.ui
 
 import android.os.Bundle
-import android.provider.Settings
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewpager.widget.ViewPager
-import com.example.tablayout.adapter.MainViewPagerAdapter
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.gson.Gson
+import com.oxygenvideo.ui.adapter.MainViewPagerAdapter
+import com.example.tablayout.R
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.async
-import kotlinx.coroutines.selects.select
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-import kotlin.coroutines.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val mainAdapter = MainViewPagerAdapter(supportFragmentManager)
+        val mainAdapter =
+            MainViewPagerAdapter(
+                supportFragmentManager
+            )
         viewPager.apply {
             //setAdapter
             adapter = mainAdapter

@@ -1,9 +1,9 @@
-package com.example.tablayout.adapter
+package com.oxygenvideo.ui.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.tablayout.fragment.ChildFragment
+import com.oxygenvideo.ui.fragment.ChildFragment
 
 /**
  * 消息页面ViewPager的Adapter

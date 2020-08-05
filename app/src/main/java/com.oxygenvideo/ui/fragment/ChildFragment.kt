@@ -1,4 +1,4 @@
-package com.example.tablayout.fragment
+package com.oxygenvideo.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.fragment_child.*
 
 class ChildFragment:Fragment() {
     companion object{
-        fun newInstance(title:String): ChildFragment{
+        fun newInstance(title:String): ChildFragment {
             val args = Bundle()
             args.putString("title",title)
             val fragment = ChildFragment()
@@ -31,9 +31,4 @@ class ChildFragment:Fragment() {
         super.onActivityCreated(savedInstanceState)
         textView.text = arguments?.getString("title")
     }
-}
-class mthrea() : Runnable {
-    override fun run() {
-    }
-
 }
